@@ -372,13 +372,6 @@
 //            $("#listgrop").toggle("slow");
 //        });
 //        $("#listgrop").hide();
-        $("<div class='cheshi' style='position: fixed;top:100px;left: 100px;'></div>").appendTo("body");
-        $(window).scroll(function () {
-            var hei= $(".navcont").offset().top-$(window).scrollTop();
-            $(".cheshi").text(hei);
-        })
-
-
         $("#headpos").css({"left":$(window).width()-60+"px","top":$(window).height()-50+"px"})
         $(window).resize(function () {
             var ax=$(window).width()-60;
